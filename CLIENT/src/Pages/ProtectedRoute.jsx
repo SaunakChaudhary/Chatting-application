@@ -12,7 +12,7 @@ const ProtectedRoute = ({ children }) => {
   const token = localStorage.getItem("Token");
 
   const getUserData = async () => {
-    const response = await fetch("http://localhost:5000/api/auth/get-user", {
+    const response = await fetch("https://chatting-application-backend-3wlj.onrender.com/api/auth/get-user", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,

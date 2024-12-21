@@ -18,7 +18,7 @@ const Home = () => {
     const getUserDataOfReceiver = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/users/getUsers",
+          "https://chatting-application-backend-3wlj.onrender.com/api/users/getUsers",
           {
             method: "POST",
             headers: {
@@ -46,7 +46,7 @@ const Home = () => {
     const getMessages = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/message/${clickedUser}`,
+          `https://chatting-application-backend-3wlj.onrender.com/api/message/${clickedUser}`,
           {
             method: "GET",
             headers: { Authorization: `Bearer ${token}` },
@@ -85,7 +85,7 @@ const Home = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/message/send/${clickedUser}`,
+        `https://chatting-application-backend-3wlj.onrender.com/api/message/send/${clickedUser}`,
         {
           method: "POST",
           headers: {

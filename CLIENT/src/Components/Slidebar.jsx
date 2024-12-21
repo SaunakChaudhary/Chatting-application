@@ -13,7 +13,7 @@ const Slidebar = ({ setClickedUser }) => {
 
   useEffect(() => {
     const fetchUsersExceptLoggedin = async () => {
-      const response = await fetch("http://localhost:5000/api/users", {
+      const response = await fetch("https://chatting-application-backend-3wlj.onrender.com/api/users", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
