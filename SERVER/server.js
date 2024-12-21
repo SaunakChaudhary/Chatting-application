@@ -12,7 +12,7 @@ const messageRouter = require("./Routes/message.routes");
 const userRouter = require("./Routes/users.routes");
 
 const corseOption = {
-  origin: "http://localhost:5173",
+  origin: "https://chatting-application-frontend-4cnl.onrender.com",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
 };
 

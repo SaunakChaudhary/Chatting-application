@@ -6,7 +6,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Adjust as necessary
+    origin: "https://chatting-application-frontend-4cnl.onrender.com", // Adjust as necessary
     methods: ["GET", "POST"],
     credentials: true,
   },
