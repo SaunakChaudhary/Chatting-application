@@ -14,7 +14,7 @@ const userRouter = require("./Routes/users.routes");
 const corseOption = {
   origin: "https://chatting-application-frontend-4cnl.onrender.com",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials:true
+  credentials: true,
 };
 
 app.use(express.json());
@@ -24,6 +24,9 @@ app.use(cors(corseOption));
 app.options("*", cors(corseOption)); // Handle pre-flight requests
 
 // Router
+app.post("/", (req, res) => {
+  res.send("Hello");
+});
 app.use("/api/auth", authRouter);
 app.use("/api/message", messageRouter);
 app.use("/api/users", userRouter);
