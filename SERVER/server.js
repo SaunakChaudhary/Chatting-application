@@ -24,9 +24,7 @@ app.use(cors(corseOption));
 app.options("*", cors(corseOption)); // Handle pre-flight requests
 
 // Router
-app.post("/aa", (req, res) => {
-  res.send("Hello");
-});
+
 app.use("/api/auth", authRouter);
 app.use("/api/message", messageRouter);
 app.use("/api/users", userRouter);
